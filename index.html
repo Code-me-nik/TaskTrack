@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> to do list </title>
+
+  <!-- css link  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font awesome icons link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300&family=REM&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap icons cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- font awesome icons cnd link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <section>
+
+
+    <div id="sidemenu">
+      <div class="profile">
+        <img class="profileimage"
+          src="https://imgs.search.brave.com/NEsmN62PWfJ5Sl_E9ghmCE9PLOzgW0W16Jyn-aw3esw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMnFw/MHNpb3RsYTc0Ni5j/bG91ZGZyb250Lm5l/dC9pbWcvdXNlLWNh/c2VzL3Byb2ZpbGUt/cGljdHVyZS90ZW1w/bGF0ZV8wLmpwZw"
+          alt="profile image">
+        <h1> His name </h1>
+      </div>
+
+      <ul>
+        <li><i class="bi bi-person"></i><a href="#">Profile</a></li>
+        <li><i class="bi bi-list"></i><a href="#">List</a></li>
+        <li><i class="bi bi-journal"></i><a href="#">History</a></li>
+        <li><i class="bi bi-gear"></i><a href="#">Setting</a></li>
+      </ul>
+
+      <button type="button" id="mode">
+        <span id="circle"></span>
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i>
+      </button>
+    </div>
+
+
+    <div id="todomanagement">
+
+      <div class="taskadd">
+        <button type="submit" id="addtask">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <button type="button" id="sorting">
+          <i class="bi bi-sort-down"></i>
+        </button>
+      </div>
+
+      <div class="task">
+        <input type="text" class="taskformatting" placeholder="add your todays task ! ">
+      </div>
+
+      <div class="taskfield"> </div>
+
+      <div class="setting">
+        <button type="button" class="setting">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
