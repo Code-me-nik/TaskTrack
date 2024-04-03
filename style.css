@@ -46,7 +46,7 @@ nav {
   grid-template-columns: 100%;
   grid-template-rows: 200px 430px;
   justify-content: center;
-  color: var(--c1);
+  color: var(--c3);
 }
 
 .profile {
@@ -58,21 +58,19 @@ nav {
 
 .profile h1 {
   text-align: center;
-  color: var(--c3);
 }
 
 .profileimage {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color: var(--c6);
 }
 
 .navlist {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .navitem {
@@ -80,7 +78,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  width: 70px;
+  width: 70%;
   height: 70px;
   border-radius: 15px;
   transition: all .3s ease-out;
@@ -88,7 +86,7 @@ nav {
 
 .navitem a {
   list-style: none;
-  color: var(--c1);
+  color: var(--c2);
   font-size: 17px;
   text-transform: capitalize;
   font-family: 'Montserrat', sans-serif;

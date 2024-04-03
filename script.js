@@ -4,8 +4,8 @@ let inputtask = document.querySelector('.inputtask')
 
 addtaskbtn.addEventListener('click', () => {
 
-//   let tasklist = document.querySelector('.tasklist')
-//   tasklist.appendChild( createTask() )
+  let tasklist = document.querySelector('.tasklist')
+  tasklist.appendChild( createTask() )
 
 })
 
