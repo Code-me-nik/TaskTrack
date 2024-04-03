@@ -1,36 +1,65 @@
-// dark and light mode button 
-var num = 0;
 
-// this get the all elements from index file 
-let btn = document.getElementById("mode")
-let sun = document.getElementsByClassName("bi bi-sun")[0]
-let moon = document.getElementsByClassName("bi bi-moon")[0]
-let circle = document.getElementById("circle")
-let body = document.querySelector("body")
+let addtaskbtn = document.querySelector('.addtask')
+let inputtask = document.querySelector('.inputtask')
 
-btn.addEventListener("click", function () {
-  // light mode
-  circle.style.transform = "translate(33px)"
-  circle.style.borderColor = "var(--c1)"
-  circle.style.backgroundColor = "rgba(253, 203, 103, 0.800)"
-  sun.style.color = "var(--c3)"
-  sun.style.opacity = "1"
-  moon.style.opacity = "0"
-  btn.style.backgroundColor = "var(--c1)"
-  body.style.backgroundColor = "var(--c1)"
-  num++
+addtaskbtn.addEventListener('click', () => {
 
-  if (num == 2) {
-    // dark mode 
-    num = 0;
-    circle.style.transform = "translate(4px)"
-    circle.style.borderColor = "var(--c1)"
-    circle.style.backgroundColor = "rgba(42, 51, 64, 0.800)"
-    moon.style.color = "var(--c1)"
-    moon.style.opacity = "1"
-    sun.style.opacity = "0"
-    btn.style.backgroundColor = "var(--c5)"
-    body.style.backgroundColor = "var(--c4)"
+//   let tasklist = document.querySelector('.tasklist')
+//   tasklist.appendChild( createTask() )
 
-  }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+function createTask() {
+
+    let div = document.createElement('div')
+    div.className = 'tasks'
+
+    let label = document.createElement('label')
+    label.className = 'container'
+
+    div.appendChild(label)
+
+    let checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    checkbox.checked = false
+
+    label.appendChild(checkbox)
+
+    let checkmark = document.createElement('span')
+    checkmark.className = 'checkmark'
+
+    label.appendChild(checkmark)
+
+    let tasktext = document.createElement('span')
+    tasktext.className = 'tasktext'
+    tasktext.innerHTML = inputtask.value
+    label.appendChild(tasktext)
+
+    let btnsdiv = document.createElement('div')
+    btnsdiv.className = 'btnsdiv'
+
+    div.appendChild(btnsdiv)
+
+    let editbtn = document.createElement('button')
+    editbtn.classList = 'edit sameformatbtn'
+
+    btnsdiv.appendChild(editbtn)
+
+    let icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-pencil");
+
+    editbtn.appendChild(icon)
+
+    return div 
+}

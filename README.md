@@ -20,6 +20,15 @@ Add new tasks using the input field.
 Edit or delete tasks as needed.
 Mark tasks as completed by checking the checkbox.
 
+## Preview
+
+![full screen view](<project preview/full screen view.png>)
+
+
+## Live link
+
+👉🏻 https://code-me-nik.github.io/TaskTrack/
+
 
 ## Installation:
 

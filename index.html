@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> to do list </title>
+  <title> TASKTRACK </title>
 
   <!-- css link  -->
   <link rel="stylesheet" href="style.css">
@@ -37,53 +37,58 @@
   <section>
 
 
-    <div id="sidemenu">
+    <nav>
       <div class="profile">
         <img class="profileimage"
-          src="https://imgs.search.brave.com/NEsmN62PWfJ5Sl_E9ghmCE9PLOzgW0W16Jyn-aw3esw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMnFw/MHNpb3RsYTc0Ni5j/bG91ZGZyb250Lm5l/dC9pbWcvdXNlLWNh/c2VzL3Byb2ZpbGUt/cGljdHVyZS90ZW1w/bGF0ZV8wLmpwZw"
+          src="https://imgs.search.brave.com/TaQdbeSmf3Zs8UNWNZtl3cqqCLZMC5TTvfklHAcfde0/rs:fit:500:0:0/g:ce/aHR0cDovL20uZ2V0/dHl3YWxscGFwZXJz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wNi9Qcm9m/aWxlLVBob3RvLW9m/LURhcmstQmxhY2st/Rm9yLUJveS5qcGc"
           alt="profile image">
         <h1> His name </h1>
       </div>
 
-      <ul>
-        <li><i class="bi bi-person"></i><a href="#">Profile</a></li>
-        <li><i class="bi bi-list"></i><a href="#">List</a></li>
-        <li><i class="bi bi-journal"></i><a href="#">History</a></li>
-        <li><i class="bi bi-gear"></i><a href="#">Setting</a></li>
-      </ul>
+      <div class="navlist">
+        <span class="navitem" class="navitem">
+          <i class="bi bi-person"></i>
+          <a href="#">Profile</a>
+        </span >
+        <span class="navitem">
+          <i class="bi bi-journal"></i>
+          <a href="#">History</a>
+        </span >
+        <span class="navitem">
+          <i class="bi bi-gear"></i>
+          <a href="#">Setting</a>
+        </span >
+        <span class="navitem">
+          <i class="bi bi-trash"></i>
+          <a href="#">Trash</a>
+        </span >
+      </div>
 
-      <button type="button" id="mode">
-        <span id="circle"></span>
-        <i class="bi bi-sun"></i>
-        <i class="bi bi-moon"></i>
-      </button>
-    </div>
-
+    </nav>
 
     <div id="todomanagement">
 
-      <div class="taskadd">
-        <button type="submit" id="addtask">
-          <i class="fa-solid fa-plus"></i>
-        </button>
+      <div class="gettask">
+        <input type="text" class="inputtask" placeholder="add your todays task ! ">
 
-        <button type="button" id="sorting">
-          <i class="bi bi-sort-down"></i>
+        <button type="submit" class="addtask sameformatbtn">
+          <i class="fa-solid fa-plus"></i>  
         </button>
       </div>
 
-      <div class="task">
-        <input type="text" class="taskformatting" placeholder="add your todays task ! ">
+      <div class="tasklistformat">
+          <button type="button" class="sorting sameformatbtn">
+            <i class="bi bi-sort-down"></i>
+          </button>
+          <button type="button" class="trash sameformatbtn">
+            <i class="bi bi-trash"></i>
+          </button>
       </div>
 
-      <div class="taskfield"> </div>
-
-      <div class="setting">
-        <button type="button" class="setting">
-          <i class="fa-solid fa-gear"></i>
-        </button>
-
+    <div class="tasklist"></div>
+    
   </section>
+
 
   <script src="script.js"></script>
 </body>
